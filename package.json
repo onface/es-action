@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "dev": "fis3 release -wL -d ./output",
+    "prod": "fis3 release -d ./output",
+    "s": "node server.js"
+  },
+  "dependencies": {
+    "fis3-hook-relative": "^1.0.9",
+    "markrun": "^0.3.0",
+    "mose": "0.0.2"
+  }
+}
