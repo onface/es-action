@@ -5,4 +5,5 @@ ECMAScript5 &amp; ECMAScript6 action
 
 ## Array
 
-- [Array.IndexOf](es5/Array/Array.IndexOf.md)
+- [Array.indexOf](es5/Array/Array.indexOf.md)
+- [Array.filter](es5/Array/Array.filter.md)
