@@ -4,12 +4,35 @@ var markrun = require('markrun')
 fis.match('**', {
   relative: true
 })
+var babel = require('babel-core');
+fis.match('{*.js,*.md:js}', {
+    parser: function (content, file) {
+        return babel.transform(content, {
+            presets: [
+                'es2015'
+            ]
+        }).code
+    }
+})
+fis.match('{server.js,fis-conf.js}', {
+    release: false
+})
 fis.match('*.md', {
     rExt: '.html',
     isHtmlLike: true,
     parser: function (content, file) {
         var html = markrun(content, {
-            template: require('fs').readFileSync(path.join(__dirname, '/static/markrun-template.html')).toString()
+            template: require('fs').readFileSync(path.join(__dirname, '/static/markrun-template.html')).toString(),
+            compile: {
+                'js': function (source, data, info) {
+                    return {
+                        lang: 'js',
+                        code: fis.compile.partial(source, file, {
+                           ext: 'js'
+                        })
+                    }
+                }
+            }
         })
         return html
     }
