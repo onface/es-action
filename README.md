@@ -13,3 +13,4 @@ ECMAScript5 &amp; ECMAScript6 action
 ## OOP
 
 - [多态](OOP/polymorphism.md)
+- [封装](OOP/encapsulation.md)
