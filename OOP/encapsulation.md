@@ -37,12 +37,15 @@ dialog('judy') // <div style="z-index:2;" >judy</div>
 
 ````js
 var Dialog = function (text) {
+    // 私有属性
     this.text = text
 }
+// 公有方法
 Dialog.prototype.show = function () {
     this.constructor.prototype._zIndex = this.constructor.prototype._zIndex + 1
     console.log('<div style="z-index:' + this.constructor.prototype._zIndex + ';" >' + this.text +'</div>')
 }
+// 公有属性
 Dialog.prototype._zIndex = 0
 var aDialog = new Dialog('a')
 var bDialog = new Dialog('b')
