@@ -1,7 +1,6 @@
-# es56-action
+# es-action
 
-ECMAScript5 &amp; ECMAScript6 action
-
+ECMAScript 实战
 
 ## Array
 
