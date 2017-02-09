@@ -8,7 +8,7 @@ ECMAScript 实战
 - [Array.filter](es5/Array/Array.filter.md)
 - [Array.every](es5/Array/Array.every.md)
 
-## function
+## Function
 
 - ~~[Function.bind](es5/Function/Function.bind.md)~~
 
