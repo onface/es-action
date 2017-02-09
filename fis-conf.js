@@ -14,6 +14,9 @@ fis.match('{*.js,*.md:js}', {
         }).code
     }
 })
+fis.match('static/**.js', {
+    parser:[]
+})
 fis.match('{server.js,fis-conf.js}', {
     release: false
 })
