@@ -17,6 +17,7 @@ ECMAScript 实战
 ### 入门
 
 - [私有和公有](OOP/private-public.md) (实现弹窗组件)
+- ~~[继承](OOP/extends.md)~~
 
 ### 特性
 

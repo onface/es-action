@@ -28,11 +28,18 @@ fis.match('*.md', {
             template: require('fs').readFileSync(path.join(__dirname, '/static/markrun-template.html')).toString(),
             compile: {
                 'js': function (source, data, info) {
+                    var code = fis.compile.partial(source, file, {
+                       ext: 'js'
+                    })
+                    if (data.afterCode) {
+                        code = code + ';' + data.afterCode + ';'
+                    }
+                    if (data.runTimeout) {
+                        code = 'setTimeout(function(){' + code + '},' + data.runTimeout + ');'
+                    }
                     return {
                         lang: 'js',
-                        code: fis.compile.partial(source, file, {
-                           ext: 'js'
-                        })
+                        code: code
                     }
                 }
             }
