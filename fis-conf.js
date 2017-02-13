@@ -43,6 +43,8 @@ fis.match('*.md', {
                     }
                 }
             }
+        }, {
+            filepath: file.fullname
         })
         return html
     }
