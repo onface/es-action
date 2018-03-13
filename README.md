@@ -8,9 +8,9 @@ ECMAScript 实战
 - [Array.filter](es5/Array/Array.filter.md)
 - [Array.every](es5/Array/Array.every.md)
 
-## Function
+## async
 
-- ~~[Function.bind](es5/Function/Function.bind.md)~~
+- [Promise](es6/Promise.md)
 
 ## OOP
 
