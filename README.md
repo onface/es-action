@@ -23,3 +23,6 @@ ECMAScript 实战
 
 - [多态](OOP/polymorphism.md)
 - [封装](OOP/encapsulation.md)
+
+
+> 本书大量语法说明和示例参考 http://es6.ruanyifeng.com/ 
