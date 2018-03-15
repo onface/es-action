@@ -11,6 +11,7 @@ ECMAScript 实战
 ## async
 
 - [Promise](es6/Promise.md)
+- [Generator](es6/Generator.md)
 
 ## OOP
 
@@ -25,4 +26,4 @@ ECMAScript 实战
 - [封装](OOP/encapsulation.md)
 
 
-> 本书大量语法说明和示例参考 http://es6.ruanyifeng.com/ 
+> 本书大量语法说明和示例参考 http://es6.ruanyifeng.com/
