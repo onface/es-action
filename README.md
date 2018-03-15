@@ -12,6 +12,7 @@ ECMAScript 实战
 
 - [Promise](es6/Promise.md)
 - [Generator](es6/Generator.md)
+- [async](es6/async.md)
 
 ## OOP
 

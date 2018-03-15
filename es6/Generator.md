@@ -89,6 +89,4 @@ promise.then(function (imgNode) {
 })
 ````
 
-`generator` 虽然能解决异步的问题，但有时它反而会让代码更难以维护，即使有 [co](https://github.com/tj/co)模块来解决自动执行的需求。
-
-前期了解 `generator` 的语法后可以立即学习 [async函数](./async.md)
+前期了解 `generator` 的语法后可以立即学习 [async函数](./async.md)， 了解 `generator` 只是为了 学习 `async`函数做准备。
